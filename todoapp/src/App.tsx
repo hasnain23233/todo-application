@@ -1,14 +1,25 @@
 
 import './App.css'
 import UserForm from './components/UserForm'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Navbar from './components/Navbar';
 
 function App() {
 
   return (
     <>
-      <div>
-        <UserForm/>
-      </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path='/create' element={
+        <UserForm/>}/>
+        </Routes>
+    </Router>
     </>
   )
 }
