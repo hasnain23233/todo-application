@@ -5,9 +5,9 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 import Navbar from './components/Navbar';
+import AllTodos from './components/AllTodos';
 
 function App() {
 
@@ -17,7 +17,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/create' element={
-        <UserForm/>}/>
+        <UserForm/>}/><Route path='/all-todos' element={
+        <AllTodos/>}/>
         </Routes>
     </Router>
     </>
