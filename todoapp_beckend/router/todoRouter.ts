@@ -3,6 +3,6 @@ import {getInfo} from '../controller/todoController'
 
 const router = express.Router()
 
-router.get('/' ,getInfo)
+router.get('/addingTodo' ,getInfo)
 
 export default router
